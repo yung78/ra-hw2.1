@@ -1,8 +1,11 @@
-import './App.css';
+import './style.css';
+import Portfolio from './Portfolio';
 
 function App() {
   return (
-  <div></div>
+  <div className='portfolio'>
+    <Portfolio />
+  </div>
   );
 }
 

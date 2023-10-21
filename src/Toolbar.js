@@ -5,7 +5,12 @@ const Toolbar = ({ filters, selected, onSelectFilter }) => {
   }
 
   return filters.map((filter, index) => (
-    <button key={ index } onClick={ () => handleClick(filter) } className={'btn'}>{ filter }</button>
+    <button 
+      key={ index } 
+      onClick={ () => handleClick(filter) } 
+      className={ filter === selected ? 'btn ' + filter + ' active' : 'btn ' + filter }>
+        { filter }
+    </button>
   ));
 };
 
